@@ -1,7 +1,7 @@
 FROM java:7
 MAINTAINER Mohammad Naghavi <mohamnag@gmail.com>
 
-ENV ANDROID_VERSION android-23
+ENV ANDROID_VERSION android-22,android-23
 ENV ANDROID_SDK_VERSION 24.4.1
 ENV BUILD_TOOLS_VERSION build-tools-23.0.2
 ENV GRADLE_VERSION 2.7
