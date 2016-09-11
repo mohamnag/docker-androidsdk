@@ -3,7 +3,7 @@ MAINTAINER Mohammad Naghavi <mohamnag@gmail.com>
 
 ENV ANDROID_VERSION android-22,android-23,android-24
 ENV ANDROID_SDK_VERSION 24.4.1
-ENV BUILD_TOOLS_VERSION build-tools-23.0.2,build-tools-24.0.1
+ENV BUILD_TOOLS_VERSION build-tools-23.0.2,build-tools-23.0.3,build-tools-24.0.1
 ENV GRADLE_VERSION 2.14.1
 
 
