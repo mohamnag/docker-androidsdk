@@ -1,4 +1,4 @@
-FROM java:7
+FROM java:8
 MAINTAINER Mohammad Naghavi <mohamnag@gmail.com>
 
 ENV ANDROID_VERSION android-22,android-23,android-24
