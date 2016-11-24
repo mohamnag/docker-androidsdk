@@ -1,9 +1,9 @@
 FROM java:8
 MAINTAINER Mohammad Naghavi <mohamnag@gmail.com>
 
-ENV ANDROID_VERSION android-22,android-23,android-24
+ENV ANDROID_VERSION android-22,android-23,android-24,android-25
 ENV ANDROID_SDK_VERSION 24.4.1
-ENV BUILD_TOOLS_VERSION build-tools-23.0.2,build-tools-23.0.3,build-tools-24.0.1
+ENV BUILD_TOOLS_VERSION build-tools-23.0.2,build-tools-23.0.3,build-tools-24.0.1,build-tools-25.0.1
 ENV GRADLE_VERSION 2.14.1
 
 
@@ -36,7 +36,7 @@ ADD http://dl.google.com/android/android-sdk_r${ANDROID_SDK_VERSION}-linux.tgz /
 RUN mkdir -p $ANDROID_HOME && \
     tar -xzf /tmp/android-sdk-linux.tgz -C /tmp && \
     mv /tmp/android-sdk-linux/* $ANDROID_HOME && \
-    ( sleep 5 && while [ 1 ]; do sleep 1; echo y; done ) | android update sdk --no-ui -a --filter platform-tools,${ANDROID_VERSION},${BUILD_TOOLS_VERSION},extra-android-m2repository,extra-android-support,extra-android-m2repository,extra-google-google_play_services
+    ( sleep 5 && while [ 1 ]; do sleep 1; echo y; done ) | android update sdk --no-ui -a --filter platform-tools,${ANDROID_VERSION},${BUILD_TOOLS_VERSION},extra-android-m2repository,extra-android-support,extra-google-google_play_services,extra-google-market_apk_expansion
 # clean up
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     apt-get autoremove -y && \
