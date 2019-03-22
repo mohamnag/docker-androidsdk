@@ -1,10 +1,10 @@
 FROM java:8
 MAINTAINER Mohammad Naghavi <mohamnag@gmail.com>
 
-ENV ANDROID_VERSION android-22,android-23,android-24,android-25
-ENV ANDROID_SDK_VERSION 24.4.1
-ENV BUILD_TOOLS_VERSION build-tools-23.0.2,build-tools-23.0.3,build-tools-24.0.1,build-tools-25.0.1
-ENV GRADLE_VERSION 2.14.1
+ENV ANDROID_VERSION android-28
+ENV ANDROID_SDK_VERSION 28.0.2
+ENV BUILD_TOOLS_VERSION build-tools-28.0.1,build-tools-28.0.2,build-tools-28.0.3
+ENV GRADLE_VERSION 4.10.2
 
 
 ENV ANDROID_HOME /opt/android-sdk-linux
